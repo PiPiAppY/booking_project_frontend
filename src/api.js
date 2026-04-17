@@ -1,8 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000/api', // бэкенд
+    baseURL: 'https://booking-backend-dcfc.onrender.com/api', // жёстко прописали
 });
+
 
 // Добавляем токен в заголовки, если он есть
 api.interceptors.request.use((config) => {
