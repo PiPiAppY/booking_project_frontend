@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar token={token} setToken={setToken} />
       <div style={{ padding: '20px' }}>
         <Routes>
@@ -29,7 +29,7 @@ function App() {
           <Route path="/" element={<Navigate to="/resources" />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
