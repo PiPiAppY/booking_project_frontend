@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'https://booking-backend-dcfc.onrender.com/api', // жёстко прописали
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:3000/api',
 });
 
 
